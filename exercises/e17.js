@@ -7,7 +7,8 @@
 
 export function doesArrayInclude(array, value) {
   // Your code goes here...
-
+  let result = array.includes(value);
+  return result
 }
 
 

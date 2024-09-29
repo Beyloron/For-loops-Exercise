@@ -6,7 +6,8 @@
 
 export function reverseArray(array) {
   // Your code goes here...
-
+  let result = array.reverse();
+  return result;
 }
 
 
