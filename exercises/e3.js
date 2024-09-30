@@ -29,17 +29,13 @@ export function getAverage(array) {
 
 export function getStringSum(str) {
   // Your code goes here...
-  let sumArray = [];
-  let sum = 0;
-  for (let i = 0; i < str.length; i++) {
-    if (!isNaN(str[i])) {
-      sumArray.push(parseInt(str[i]));
+  let sumTotal = 0;
+  for (let elem of str) {
+    if (parseInt(elem)) {
+      sumTotal += +elem;
     }
   }
-  for (let i = 0; i < sumArray.length; i++) {
-    sum += sumArray[i];
-  }
-  return sum;
+  return sumTotal;
 }
 
 
